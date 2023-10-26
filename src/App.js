@@ -5,7 +5,13 @@ import LandingPage from './components/LandingPage.jsx';
 function App() {
 
   return (
-    <></>
+    <Router>
+     
+        <Routes>
+          <Route path='/' element={<LandingPage/>}/>
+        </Routes>
+      
+    </Router>
   );
 }
 
