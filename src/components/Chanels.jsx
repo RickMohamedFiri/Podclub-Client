@@ -8,8 +8,8 @@ const Channels = () => {
                     <img src="icon.jpg" alt="" />
                 </div>
                 <div className="details">
-                    <p className="username">Light Yagami</p>
-                    <p className="about">I am justice.</p>
+                    <p className="username">Rick Sanchez</p>
+                    <p className="about">Get Schwifty.</p>
                 </div>
             </div>
             
@@ -18,22 +18,28 @@ const Channels = () => {
             </form>
 
             <ul className="channels">
-                <li className="channel">
-                    <div className="icon"></div>
+            <li className="channel">
+                    <div className="icon">
+                        <img src="icon2.jpg" alt="" />
+                    </div>
+                    <p>CHANNEL NAME</p>
+                </li>  <li className="channel">
+                    <div className="icon">
+                        <img src="icon2.jpg" alt="" />
+                    </div>
+                    <p>CHANNEL NAME</p>
+                </li>  <li className="channel">
+                    <div className="icon">
+                        <img src="icon2.jpg" alt="" />
+                    </div>
+                    <p>CHANNEL NAME</p>
+                </li>  <li className="channel">
+                    <div className="icon">
+                        <img src="icon2.jpg" alt="" />
+                    </div>
                     <p>CHANNEL NAME</p>
                 </li>
-                <li className="channel">
-                    <div className="icon"></div>
-                    <p>CHANNEL NAME</p>
-                </li>
-                <li className="channel">
-                    <div className="icon"></div>
-                    <p>CHANNEL NAME</p>
-                </li>
-                <li className="channel">
-                    <div className="icon"></div>
-                    <p>CHANNEL NAME</p>
-                </li>
+            
                 
                 
             </ul>

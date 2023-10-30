@@ -12,7 +12,7 @@
 .user
 {
     display: flex;
-    padding: 1rem 1rem;
+    padding: 1rem .2rem;
     align-items: center;
     gap: 1.2rem;
 }
@@ -63,15 +63,20 @@
 
 .channel:hover
 {
-    background: #050114;
+    background: #dd3f00;
 }
 
 .icon
 {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background: red;
+}
+
+.icon img
+{
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .channel p
