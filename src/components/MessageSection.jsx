@@ -1,5 +1,7 @@
 import '../css/messagesSection.css';
 import Textbar from './Textbar.jsx';
+import Chats from './Chats';
+
 
 const MessageSection = () => {
     return ( 
@@ -16,9 +18,7 @@ const MessageSection = () => {
             </div>
 
 
-            <div className="messages">
-                
-            </div>
+            <Chats/>
 
 
             <Textbar/>

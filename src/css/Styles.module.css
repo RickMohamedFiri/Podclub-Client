@@ -1,24 +1,90 @@
-
-/* 
-@media(max-width: 800px) {
-
-.inputAres
+.messages
 {
- 
-  height: 6rem;
-  width: 100%;
-  padding: .2rem;
+  background: grey;
+  height: calc(100%-20rem);
+  padding: .95rem;
+}
 
-} 
-.msgbox 
+.messages::-webkit-scrollbar
 {
- 
-  background: #fe8e04;
-  
+  display: none;
 }
 
 
-} */
+.message
+{
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.Owner
+{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+
+.Owner .messageContent
+{
+  align-items: flex-end; 
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: .63rem;
+}
+.Owner p
+{
+  max-width: max-content;
+  color: #fff;
+  padding: .625rem 1.25rem;
+  border-radius: 0.63rem 0 .63rem .63rem;
+  background: #fe8e04;
+}
+
+
+
+.messageInfo
+{
+  padding-right: .6rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 3000;
+}
+
+.messageInfo img
+{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 3rem;
+  height: 3rem;
+}
+
+.messageContent
+{
+  align-items: flex-start; 
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: .63rem;
+}
+.message p
+{
+  max-width: max-content;
+  color: #fff;
+  padding: .625rem 1.25rem;
+  border-radius: 0 0.63rem .63rem .63rem;
+  background: #07011F;
+}
+
+
+.messageContent img 
+{
+  width: 40%;
+}
 
 
 .inputArea
@@ -26,11 +92,13 @@
   box-shadow: -15px 10px 30px black;
    color: #fff;
   border-top: 1.8px solid grey;
-  height: 6rem;
+  height: 4.7rem;
   width: 100%;
+  /* position: fixed; */
+  position: sticky;
+  bottom: 0;
   align-items: center;
   padding: .5rem;
-  position: relative;
   background: lightgrey;
   display: flex;
   justify-content: space-between;
@@ -53,9 +121,9 @@
 
 .inputbox::placeholder
 {
-    font-size: 1em;
+    font-size: 1rem;
     color: #000;
-    font-weight: 480;
+    font-weight: 580;
 }
 
 .sendicons
@@ -76,8 +144,8 @@
   background: #07011F;
   border: 2.7px solid #07011F;
   color: white;
-  width: 2.8rem;
-  height: 2.6rem;
+  width: 2.3rem;
+  height: 2.3rem;
   transition: .5s ease;
 }
 
