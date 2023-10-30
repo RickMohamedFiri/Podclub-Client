@@ -1,0 +1,112 @@
+
+.landing-page
+{
+  padding: 3.5rem 5rem;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: #07011F;
+  overflow: hidden;
+}
+
+.nav-bar{
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+
+.logo{
+background: red;
+width: 30px;
+height: 30px;
+}
+
+.name
+{
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+}
+.name span{
+  color: #C86F1E;
+
+}
+
+.login-btn{
+  font-size: 1.2rem;
+  color: #07011F;
+  margin-left: 6rem;
+  padding: .6rem 1.2rem;
+  font-weight: bold;
+  background: #C86F1E;
+  border: 3px solid #C86F1E;
+  border-radius: 4rem;
+}
+
+.login-btn:hover{
+  background: transparent;
+  color: #C86F1E;
+  transition: background .5s ease, color .5s ease;
+}
+
+.body{
+  display: flex;
+  height: 100%;
+}
+
+.title{
+  padding-left: 1rem;
+  padding-top: 2rem;
+  line-height: 4.5rem;
+  width: 60%;
+  height: 100%;
+ }
+
+.title h1
+{
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.title h1 .connect{
+  font-weight: 100;
+}
+
+.title h1 .podcast{
+  color: #C86F1E;
+}
+
+.get-started{
+  font-size: 1.2rem;
+  color: #07011F;
+  margin-left: 6rem;
+  padding: .6rem 1.2rem;
+  font-weight: bold;
+  background: #C86F1E;
+  border-radius: 4rem;
+  border: 3px solid #C86F1E;
+
+}
+
+.get-started:hover{
+  background: transparent;
+  color: #C86F1E;
+  transition: background .5s ease, color .5s ease;
+}
+
+
+
+.image
+{
+  width: 45%;
+}
+
+.circle{
+ background: url('../../public/mic.jpeg');
+}
