@@ -10,7 +10,7 @@
 {
     background: #07011F;
     color: #fff;
-    /* position: absolute; */
+    position: sticky;
     width: 100%;
     top: 0;
     height: 6rem;
@@ -41,8 +41,3 @@
 }
 
 
-.messages
-{
-    background: grey;
-    height: 100%;
-}
