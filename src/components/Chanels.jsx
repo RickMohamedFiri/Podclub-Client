@@ -5,7 +5,7 @@ const Channels = () => {
         <div className='menu'>
             <div className="user">
                 <div className="icon">
-                    <img src="logo.jpeg" alt="" />
+                    <img src="icon.jpg" alt="" />
                 </div>
                 <div className="details">
                     <p className="username">Light Yagami</p>
