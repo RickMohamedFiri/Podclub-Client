@@ -21,6 +21,8 @@ const LandingPage = () => {
 
                     <div className="image">
                         <div className="circle">
+                            <div className="div">
+                            </div>
                             <img className="micimg" src="mic.png" alt="" />
                             <img className="playimg" src="play.png" alt="" />
                         </div>

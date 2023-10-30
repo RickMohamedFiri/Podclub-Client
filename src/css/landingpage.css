@@ -62,7 +62,7 @@ height: 27px;
 
 .title{
   padding-left: 1rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   line-height: 4.5rem;
   width: 60%;
   height: 100%;
@@ -117,6 +117,17 @@ height: 27px;
  border-radius: 50%;
 }
 
+.div
+{
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  bottom: 12rem;
+  right: 13rem;
+  transform: rotate(-18deg);
+  border: 2px solid gray;
+}
+
 .micimg
 {
   transform: translateY(-160px);
@@ -125,6 +136,6 @@ height: 27px;
 
 .playimg
 {
-  transform: translateY(-130px);
+  transform: translateY(-140px);
 }
 
