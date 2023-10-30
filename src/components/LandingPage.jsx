@@ -7,7 +7,7 @@ const LandingPage = () => {
         <>
             <div className="landing-page">
                 <div className="nav-bar">
-                    <h2 className="name">P<div className="logo"></div>D<span>CLUB</span></h2>
+                    <h2 className="name">P<div className="logo"><img src="logoimg.png" alt="" /></div>D<span>CLUB</span></h2>
                     <Link className='login-btn'>Login</Link>
                 </div>
 
@@ -21,7 +21,8 @@ const LandingPage = () => {
 
                     <div className="image">
                         <div className="circle">
-                            
+                            <img className="micimg" src="mic.png" alt="" />
+                            <img className="playimg" src="play.png" alt="" />
                         </div>
                     </div>
                     

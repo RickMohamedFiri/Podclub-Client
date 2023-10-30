@@ -1,0 +1,48 @@
+.messages-section
+{
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin-left: auto;
+}
+
+.top-bar
+{
+    background: #07011F;
+    color: #fff;
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    height: 6rem;
+    padding-left: 2rem;
+    padding-right: 6rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channel-name
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.more
+{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    font-weight: bold;
+}
+
+.more p
+{
+    cursor: pointer;
+}
+
+
+.messages
+{
+    background: grey;
+    height: 100%;
+}

@@ -20,9 +20,10 @@
 
 
 .logo{
-background: red;
-width: 30px;
-height: 30px;
+background: #fff;
+border-radius: 50%;
+width: 26px;
+height: 27px;
 }
 
 .name
@@ -38,10 +39,10 @@ height: 30px;
 }
 
 .login-btn{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #07011F;
   margin-left: 6rem;
-  padding: .6rem 1.2rem;
+  padding: .5rem 1rem;
   font-weight: bold;
   background: #C86F1E;
   border: 3px solid #C86F1E;
@@ -83,10 +84,10 @@ height: 30px;
 }
 
 .get-started{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #07011F;
   margin-left: 6rem;
-  padding: .6rem 1.2rem;
+  padding: .5rem 1rem;
   font-weight: bold;
   background: #C86F1E;
   border-radius: 4rem;
@@ -105,8 +106,25 @@ height: 30px;
 .image
 {
   width: 45%;
+  display: grid;
+  place-items: center;
 }
 
 .circle{
- background: url('../../public/mic.jpeg');
+ background: #C86F1E;
+ width: 260px;
+ height: 260px;
+ border-radius: 50%;
 }
+
+.micimg
+{
+  transform: translateY(-160px);
+  scale: .9;
+}
+
+.playimg
+{
+  transform: translateY(-130px);
+}
+
