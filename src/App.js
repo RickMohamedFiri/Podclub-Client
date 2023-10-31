@@ -5,6 +5,11 @@ import './App.css';
 import Homepage from './components/Homepage.jsx';
 // eslint-disable-next-line
 import LandingPage from './components/LandingPage.jsx';
+import SignUp from './components/SignUp.js';
+// eslint-disable-next-line
+import LogIn from './components/LogIn';
+
+
 function App() {
 
   return (
@@ -13,8 +18,10 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/Homepage' element={<Homepage/>}/>
+          <Route path='/Signup' element={<SignUp/>}/>
+          <Route path='/Login' element={<LogIn/>}/>
         </Routes>
-      
+    
     </Router>
   );
 }

@@ -13,6 +13,7 @@
 
 .message
 {
+  z-index: -4;
   display: flex;
   gap: 1.25rem;
   margin-bottom: 1.25rem;

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url(./background.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'K2D', Lato;
+}
+
+.sub-title{
+    
+    font-size: 27px;
+    font-weight: 400;
+}
+
+
+.form-container{
+    width: 411px;
+    height: 554px;
+    background-color: rgba(200,111,30,0.65);
+    border-radius: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 79px;
+}
+
+
+.login-input {
+    margin-bottom: 30px;
+    width: 308px;
+    height: 58px;
+    border-radius: 60px;
+    display: flex;
+    border: 1px solid;
+    border-color: #07011F;
+    background-color: rgba(0,0,0,0);
+    font-size: 21px;
+    text-align: center;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+
+.login-btn{
+    margin-bottom: 4px;
+    width: 308px;
+    height: 58px;
+    border-radius: 60px;
+    background-color: #07011F;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 63px;
+    font-weight: 800;
+}
+
+.redirect{
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.podclub-logo
+{
+    position: relative;
+    margin-top: 48px;
+}

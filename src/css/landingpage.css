@@ -19,7 +19,7 @@
 }
 
 
-.logo{
+.logo-mic{
 background: #fff;
 border-radius: 50%;
 width: 26px;
@@ -38,7 +38,7 @@ height: 27px;
 
 }
 
-.login-btn{
+.login-link{
   font-size: 1rem;
   color: #07011F;
   margin-left: 6rem;
@@ -49,7 +49,7 @@ height: 27px;
   border-radius: 4rem;
 }
 
-.login-btn:hover{
+.login-link:hover{
   background: transparent;
   color: #C86F1E;
   transition: background .5s ease, color .5s ease;
@@ -60,7 +60,7 @@ height: 27px;
   height: 100%;
 }
 
-.title{
+.landing-title{
   padding-left: 1rem;
   padding-top: 4rem;
   line-height: 4.5rem;
@@ -68,26 +68,26 @@ height: 27px;
   height: 100%;
  }
 
-.title h1
+.landing-title h1
 {
   font-weight: 400;
   font-size: 3.5rem;
   margin-bottom: 3rem;
 }
 
-.title h1 .connect{
+.landing-title h1 .connect{
   font-weight: 100;
 }
 
-.title h1 .podcast{
+.landing-title h1 .podcast{
   color: #C86F1E;
 }
 
-.get-started{
+.signup-link{
   font-size: 1rem;
   color: #07011F;
   margin-left: 6rem;
-  padding: .5rem 1rem;
+  padding: .8rem 1rem;
   font-weight: bold;
   background: #C86F1E;
   border-radius: 4rem;
@@ -95,7 +95,7 @@ height: 27px;
 
 }
 
-.get-started:hover{
+.signup-link:hover{
   background: transparent;
   color: #C86F1E;
   transition: background .5s ease, color .5s ease;
