@@ -1,5 +1,6 @@
+import {Link} from 'react';
+import './LogIn.css';
 import logo from './Logo(1).png'
-import './LogIn.css'
 
 
 function LogIn(){
@@ -19,7 +20,7 @@ function LogIn(){
                     <button className='login-btn'>Log In</button>
                 </form>
                 <div className='redirect'>
-                    <span >Don't have an account ?</span>
+                    <span >Already have an account ?<Link to='/Signup'>LogIn</Link></span>
                 </div>
 
             </div>

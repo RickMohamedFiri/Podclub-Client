@@ -6,6 +6,11 @@
     margin-left: auto;
 }
 
+.messages-section::-webkit-scrollbar
+{
+    display: none;
+}
+
 .top-bar
 {
     background: #07011F;
