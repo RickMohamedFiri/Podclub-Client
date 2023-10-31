@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "./Logo(1).png";
 import '../css/landingpage.css'
 
 
@@ -7,7 +8,7 @@ const LandingPage = () => {
         <>
             <div className="landing-page">
                 <div className="nav-bar">
-                    <h2 className="name">P<div className="logo-mic"><img src="logoimg.png" alt="" /></div>D<span>CLUB</span></h2>
+                    <img src={Logo} alt="The company Logo"/>
                     <Link to='/Login' className='login-link'>Login</Link>
                 </div>
 
