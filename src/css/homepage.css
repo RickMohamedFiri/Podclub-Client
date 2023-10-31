@@ -1,0 +1,10 @@
+.homepage
+{
+    display: flex;
+}
+
+.homepage::-webkit-scrollbar
+{
+  display: none;
+  color: #fe8e04;
+}

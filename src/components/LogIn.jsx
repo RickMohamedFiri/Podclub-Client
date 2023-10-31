@@ -1,5 +1,5 @@
 import logo from './Logo(1).png'
-import './LogIn.css'
+import "../css/LogIn.css"
 
 
 function LogIn(){

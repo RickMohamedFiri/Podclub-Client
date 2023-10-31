@@ -1,7 +1,6 @@
-import React ,{useState, useEffect, useCallback, Link} from 'react';
-import LogIn from './LogIn.js';
+import React ,{useState, useEffect, useCallback} from 'react';
 import logo from './Logo(1).png'
-import './SignUp.css'
+import "../css/SignUp.css";
 
 
 function SignUp(){
@@ -69,7 +68,7 @@ function SignUp(){
                     <button>Sign Up</button>
                 </form>
                 <div className='redirect'>
-                    <span >Already have an account ?<Link to={LogIn}>LogIn</Link></span>
+                    <span >Already have an account ?</span>
                 </div>
 
             </div>
