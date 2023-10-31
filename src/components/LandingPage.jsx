@@ -16,7 +16,7 @@ const LandingPage = () => {
                 <div className="body">
                     
                     <div className="landing-title">
-                        <h1><span className="connect">Connect</span> and Get the best <span className="podcast">Podcast</span> experience <br /> Today.</h1>
+                            <p> <span className="num1">Connect</span> <span className="num2">and Get the best</span><br/> <span className="num3"> Podcast</span> <span className="num4">experience</span> <br/><span className="num5">Today</span></p>
                         <Link to='/Signup' className="signup-link">Get Started</Link>
                     </div>
 

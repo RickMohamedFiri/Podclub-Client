@@ -3,11 +3,18 @@
     padding: 0;
 }
 
-.main{
-    background-image: url(./background.png);
+body{
+    background-image: url(../components/Chanels.jsx);
     background-size: cover;
     font-family: 'K2D', Lato;
 }
+
+.sub-title{
+    
+    font-size: 27px;
+    font-weight: 400;
+}
+
 
 .form-container{
     width: 411px;
@@ -24,7 +31,7 @@
     justify-content: center;
 }
 
-.signupform {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +44,7 @@
 }
 
 
-.signupinput {
+input {
     margin-bottom: 30px;
     width: 308px;
     height: 58px;
@@ -52,7 +59,7 @@
     color: #FFFFFF;
 }
 
-.signup-btn{
+button{
     margin-bottom: 4px;
     width: 308px;
     height: 58px;
@@ -64,6 +71,9 @@
 }
 
 .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #FFFFFF;
     font-size: 63px;
     margin-bottom: 38px;
@@ -76,7 +86,7 @@
     font-weight: 400;
 }
 
-.podclub-img{
+img{
     position: relative;
     margin-top: 48px;
 }

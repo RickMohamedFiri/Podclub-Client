@@ -1,6 +1,6 @@
 import React ,{useState, useEffect, useCallback} from 'react';
 import logo from './Logo(1).png'
-import './SignUp.css'
+import "../css/SignUp.css";
 
 
 function SignUp(){
