@@ -8,6 +8,7 @@
 .messages::-webkit-scrollbar
 {
   display: none;
+  color: #fe8e04;
 }
 
 
@@ -39,7 +40,7 @@
 .Owner p
 {
   max-width: max-content;
-  color: #fff;
+  color: #07011F;
   padding: .625rem 1.25rem;
   border-radius: 0.63rem 0 .63rem .63rem;
   background: #fe8e04;
@@ -52,7 +53,7 @@
   padding-right: .6rem;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: #07011F;
   font-weight: 3000;
 }
 
@@ -75,7 +76,7 @@
 .message p
 {
   max-width: max-content;
-  color: #fff;
+  color: #fe8e04;
   padding: .625rem 1.25rem;
   border-radius: 0 0.63rem .63rem .63rem;
   background: #07011F;

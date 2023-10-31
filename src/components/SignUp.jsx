@@ -1,5 +1,5 @@
 import React ,{useState, useEffect, useCallback, Link} from 'react';
-import LogIn from './LogIn.js';
+import LogIn from './LogIn.jsx';
 import logo from './Logo(1).png'
 import './SignUp.css'
 

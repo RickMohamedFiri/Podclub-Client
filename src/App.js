@@ -5,9 +5,10 @@ import './App.css';
 import Homepage from './components/Homepage.jsx';
 // eslint-disable-next-line
 import LandingPage from './components/LandingPage.jsx';
-import SignUp from './components/SignUp.js';
 // eslint-disable-next-line
-import LogIn from './components/LogIn';
+import SignUp from './components/SignUp.jsx'
+// eslint-disable-next-line
+import LogIn from './components/LogIn.jsx';
 
 
 function App() {
