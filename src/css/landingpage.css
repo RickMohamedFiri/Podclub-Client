@@ -19,10 +19,11 @@
 }
 
 
-.logo{
-background: red;
-width: 30px;
-height: 30px;
+.logo-mic{
+background: #fff;
+border-radius: 50%;
+width: 26px;
+height: 27px;
 }
 
 .name
@@ -37,18 +38,18 @@ height: 30px;
 
 }
 
-.login-btn{
-  font-size: 1.2rem;
+.login-link{
+  font-size: 1rem;
   color: #07011F;
   margin-left: 6rem;
-  padding: .6rem 1.2rem;
+  padding: .5rem 1rem;
   font-weight: bold;
   background: #C86F1E;
   border: 3px solid #C86F1E;
   border-radius: 4rem;
 }
 
-.login-btn:hover{
+.login-link:hover{
   background: transparent;
   color: #C86F1E;
   transition: background .5s ease, color .5s ease;
@@ -59,34 +60,34 @@ height: 30px;
   height: 100%;
 }
 
-.title{
+.landing-title{
   padding-left: 1rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
   line-height: 4.5rem;
   width: 60%;
   height: 100%;
  }
 
-.title h1
+.landing-title h1
 {
   font-weight: 400;
   font-size: 3.5rem;
   margin-bottom: 3rem;
 }
 
-.title h1 .connect{
+.landing-title h1 .connect{
   font-weight: 100;
 }
 
-.title h1 .podcast{
+.landing-title h1 .podcast{
   color: #C86F1E;
 }
 
-.get-started{
-  font-size: 1.2rem;
+.signup-link{
+  font-size: 1rem;
   color: #07011F;
   margin-left: 6rem;
-  padding: .6rem 1.2rem;
+  padding: .8rem 1rem;
   font-weight: bold;
   background: #C86F1E;
   border-radius: 4rem;
@@ -94,7 +95,7 @@ height: 30px;
 
 }
 
-.get-started:hover{
+.signup-link:hover{
   background: transparent;
   color: #C86F1E;
   transition: background .5s ease, color .5s ease;
@@ -105,8 +106,36 @@ height: 30px;
 .image
 {
   width: 45%;
+  display: grid;
+  place-items: center;
 }
 
 .circle{
- background: url('../../public/mic.jpeg');
+ background: #C86F1E;
+ width: 260px;
+ height: 260px;
+ border-radius: 50%;
 }
+
+.div
+{
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  bottom: 12rem;
+  right: 13rem;
+  transform: rotate(-18deg);
+  border: 2px solid gray;
+}
+
+.micimg
+{
+  transform: translateY(-160px);
+  scale: .9;
+}
+
+.playimg
+{
+  transform: translateY(-140px);
+}
+

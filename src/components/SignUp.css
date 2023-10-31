@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+.main{
     background-image: url(./background.png);
     background-size: cover;
     font-family: 'K2D', Lato;
@@ -24,7 +24,7 @@ body{
     justify-content: center;
 }
 
-form {
+.signupform {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@ form {
 }
 
 
-input {
+.signupinput {
     margin-bottom: 30px;
     width: 308px;
     height: 58px;
@@ -52,7 +52,7 @@ input {
     color: #FFFFFF;
 }
 
-button{
+.signup-btn{
     margin-bottom: 4px;
     width: 308px;
     height: 58px;
@@ -76,7 +76,7 @@ button{
     font-weight: 400;
 }
 
-img{
+.podclub-img{
     position: relative;
     margin-top: 48px;
 }

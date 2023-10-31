@@ -1,5 +1,5 @@
 import React ,{useState, useEffect, useCallback, Link} from 'react';
-import LogIn from './LogIn.js';
+import LogIn from './LogIn.jsx';
 import logo from './Logo(1).png'
 import './SignUp.css'
 
@@ -53,7 +53,7 @@ function SignUp(){
     return (
         <div className='main'>
             <div className='logo'>
-            <img src={logo} alt='podclub-logo'  />
+            <img className='podclub-img' src={logo} alt='podclub-logo'  />
             </div>
             <div className='form-container'>
             <div className='title'>
@@ -62,11 +62,11 @@ function SignUp(){
             {Object.keys(errors).length === 0 && submitting ? (
             <span className="success">Successfully submitted ✓</span>
                 ) : null}
-                <form onSubmit={handleSubmit}>
-                    <input type='text' placeholder='Username' value={inputFields.username} onChange={handleChange}/>
-                    <input type='email' placeholder='Email' value={inputFields.email} onChange={handleChange} />
-                    <input type='password' placeholder='Password' value={inputFields.password} onChange={handleChange} />
-                    <button>Sign Up</button>
+                <form className='signupform' onSubmit={handleSubmit}>
+                    <input className='signupinput' type='text' placeholder='Username' value={inputFields.username} onChange={handleChange}/>
+                    <input className='signupinput' type='email' placeholder='Email' value={inputFields.email} onChange={handleChange} />
+                    <input className='signupinput' type='password' placeholder='Password' value={inputFields.password} onChange={handleChange} />
+                    <button className='signup-btn'>Sign Up</button>
                 </form>
                 <div className='redirect'>
                     <span >Already have an account ?<Link to={LogIn}>LogIn</Link></span>
