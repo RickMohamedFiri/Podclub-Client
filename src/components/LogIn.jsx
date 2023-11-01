@@ -6,6 +6,7 @@ import logo from './Logo(1).png'
 function LogIn(){
     return (
         <div className='main'>
+            
             <div className='logo'>
             <img className='podclub-logo' src={logo} alt='podclub-logo'  />
             </div>
