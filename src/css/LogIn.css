@@ -3,9 +3,12 @@
     padding: 0;
 }
 
-body{
+.main{
+    height: 100vh;
+    width: 100%;
     background-image: url(../components/background.png);
     background-size: cover;
+    overflow: hidden;
     font-family: 'K2D', Lato;
 }
 
@@ -31,7 +34,7 @@ body{
     justify-content: center;
 }
 
-form {
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,13 +47,13 @@ form {
 }
 
 
-input {
+.login-input {
     margin-bottom: 30px;
     width: 308px;
     height: 58px;
     border-radius: 60px;
     display: flex;
-    border: 1px solid;
+    border: 2px solid;
     border-color: #07011F;
     background-color: rgba(0,0,0,0);
     font-size: 21px;
@@ -59,7 +62,12 @@ input {
     color: #FFFFFF;
 }
 
-button{
+.login-input::placeholder
+{
+    color: #fff;
+}
+
+.login-btn{
     margin-bottom: 4px;
     width: 308px;
     height: 58px;
@@ -90,6 +98,6 @@ button{
 
 .signup{
     font-size: 15px;
-    color: blue;
+    color: #020220;
     font-weight: 600;
 }

@@ -14,10 +14,10 @@ function LogIn(){
                 <span>Welcome</span> 
                 <span className='sub-title'>back, User</span>
             </div>
-                <form>
-                    <input type='text' placeholder='Username' />
-                    <input type='password' placeholder='Password' />
-                    <button>Log In</button>
+                <form className="login-form">
+                    <input className="login-input" type='text' placeholder='Username' />
+                    <input className="login-input" type='password' placeholder='Password' />
+                    <button className="login-btn">Log In</button>
                 </form>
                 <div className='redirect'>
                     <span >Don't have an account ?  <Link to="/Signup" className="signup">Sign Up</Link></span>
