@@ -1,7 +1,12 @@
 import '../css/homepage.css'
 import { AiFillCloseCircle } from 'react-icons/ai'
+import ProfileDetails from './ProfileDetails.jsx';
+import EditProfile from './EditProfile.jsx';
+import { useState } from 'react';
 
 const Profile = ({open, setOpen}) => {
+
+    const {change, setChange} = useState('True')
 
     return ( 
         <>
@@ -15,15 +20,16 @@ const Profile = ({open, setOpen}) => {
                     <div className="profile-bar">
                         
                         <ul className="profile-menu">
-                            <li>Profile Settings</li>
-                            <li>Security</li>
+                            <li onClick={()=>{setChange(!change)}}>Profile Details</li>
+                            <li  onClick={()=>{setChange(!change)}}>Edit Profile</li>
                         </ul>
                     </div>
-                    <div className="profile-area">
-                        <form action="" className="profile-form">
-                            <input type="text" />
-                        </form>
-                    </div>
+
+
+                    
+                {change?<EditProfile/>:<ProfileDetails/>}
+                    
+
                 </div>
             </div>
         </>

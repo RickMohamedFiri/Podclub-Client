@@ -9,9 +9,16 @@
   color: #fe8e04;
 }
 
+.profile-div
+{
+    width: 65%;
+    height: 100%;
+}
+
 .profile-card
 {
     position: fixed;
+    overflow: hidden;
     width: 770px;
     height: 550px;
     border-radius: .4rem;
@@ -82,8 +89,107 @@
 {
     width: 65%;
     height: 100%;
+    padding: 2rem;
     background: lightgrey;
 }
+
+.profile-area h1
+{
+    font-size: 1.9rem;
+    font-weight: 490;
+}
+
+.profile-details
+{
+    display: flex;
+    flex-direction: column;
+    padding:0 1.4rem;
+    gap: 1rem;
+}
+
+.profile-details li h2
+{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.profile-details li p
+{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+.edit-profile
+{
+    width: 65%;
+    height: 100%;
+    padding: 2rem;
+    background: lightgrey;
+}
+
+.edit-profile h1
+{
+    font-size: 1.9rem;
+    font-weight: 490;
+}
+
+
+.profile-form
+{
+    display: flex;
+    flex-direction: column;
+    padding:0 1.4rem;
+    gap: .7rem;
+}
+
+
+.profile-input
+{
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    padding: 0 1.2rem;
+    outline: none;
+    border-bottom: 2.9px solid #555;
+}
+
+.profile-input::placeholder
+{
+    font-size: 1.07rem;
+    color: #333;
+}
+
+
+.profile-submit
+{
+    padding: .9rem 1.2rem;
+    cursor: pointer;
+    width: 8.6rem;
+    font-weight: 550;
+    border-radius: .5rem;
+    margin: .4rem auto;
+    color: #fe8e04;
+    transition: .4s ease;
+    background: #07011F;
+}
+
+.profile-submit:hover
+{
+    background: #fe8e04;
+    color: #02021f;
+    transition: .4s ease;
+}
+
+
+
+
 
 
 .profile-comp
