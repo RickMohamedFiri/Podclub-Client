@@ -6,7 +6,7 @@ import Profile from './Profile.jsx';
 
 const Homepage = () => {
 
-    const {open, setOpen} = useState('True')
+    const [open, setOpen] = useState(true)
 
     return ( 
     <>
