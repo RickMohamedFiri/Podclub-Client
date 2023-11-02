@@ -8,3 +8,92 @@
   display: none;
   color: #fe8e04;
 }
+
+.profile-card
+{
+    position: fixed;
+    width: 770px;
+    height: 550px;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: column;
+    background: #07011F;
+    top: 46%;   
+    left: 50%;  /* Position it 50% from the left */
+    transform: translate(-50%, -50%);
+    border: 5px solid #fe8e04;
+    z-index: 10;
+}
+
+.profile-title
+{
+    height: 6rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-title h2 {
+    padding: 0 .4rem;
+    color: #fff;
+    font-size: 2.5rem;
+    font-stretch: extra-expanded;
+}
+
+.close
+{
+    cursor: pointer;
+    margin-right: 1rem;
+    color: #fe8e04;
+    font-size: 2rem;
+}
+
+.profile-body
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-bar
+{
+    width: 35%;
+    height: 100%;
+    color: #fff;
+    padding:0 .19rem;
+}
+
+.profile-menu li
+{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile-menu li:hover
+{
+    background: #fe8e04;
+}
+
+.profile-area
+{
+    width: 65%;
+    height: 100%;
+    background: lightgrey;
+}
+
+
+.profile-comp
+{
+    border: 2px solid #0479fe;
+   display: block;
+}
+
+.profile-hidden
+{
+    /* display: none; */
+}
+
