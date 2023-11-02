@@ -80,3 +80,9 @@
     position: relative;
     margin-top: 48px;
 }
+
+.login{
+    font-size: 15px;
+    color: blue;
+    font-weight: 600;
+}
