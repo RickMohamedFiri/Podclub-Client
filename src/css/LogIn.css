@@ -4,10 +4,10 @@
 }
 
 .main{
-    background-image: url(./background.png);
-    background-size: cover;
     height: 100vh;
     width: 100%;
+    background-image: url(../components/background.png);
+    background-size: cover;
     overflow: hidden;
     font-family: 'K2D', Lato;
 }
@@ -28,7 +28,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,13 +53,18 @@
     height: 58px;
     border-radius: 60px;
     display: flex;
-    border: 1px solid;
+    border: 2px solid;
     border-color: #07011F;
     background-color: rgba(0,0,0,0);
     font-size: 21px;
     text-align: center;
     font-weight: 100;
     color: #FFFFFF;
+}
+
+.login-input::placeholder
+{
+    color: #fff;
 }
 
 .login-btn{
@@ -80,6 +84,7 @@
     align-items: center;
     color: #FFFFFF;
     font-size: 63px;
+    margin-bottom: 38px;
     font-weight: 800;
 }
 
@@ -89,8 +94,10 @@
     font-weight: 400;
 }
 
-.podclub-logo
-{
-    position: relative;
-    margin-top: 48px;
+
+
+.signup{
+    font-size: 15px;
+    color: #020220;
+    font-weight: 600;
 }
