@@ -1,7 +1,7 @@
 import React ,{useState, useEffect, useCallback, Link} from 'react';
 import LogIn from './LogIn.jsx';
 import logo from './Logo(1).png'
-import './SignUp.css'
+import '../css/SignUp.css'
 
 
 function SignUp(){

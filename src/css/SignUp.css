@@ -4,7 +4,7 @@
 }
 
 .main{
-    background-image: url(./background.png);
+    background-image: url(../components/background.png);
     background-size: cover;
     font-family: 'K2D', Lato;
 }
