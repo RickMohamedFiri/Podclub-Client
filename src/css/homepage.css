@@ -25,10 +25,10 @@
     display: flex;
     flex-direction: column;
     background: #07011F;
-    top: 46%;   
+    top: 50%;   
     left: 50%;  /* Position it 50% from the left */
     transform: translate(-50%, -50%);
-    border: 5px solid #fe8e04;
+    border: 2px solid #fe8e04;
     z-index: 10;
 }
 
@@ -73,23 +73,38 @@
 
 .profile-menu li
 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     padding: 1rem;
     width: 100%;
-    font-size: 1.1rem;
-    font-weight: 500;
     cursor: pointer;
 }
+
+.profile-icon
+{
+    font-size: 3rem;
+}
+
+.profile-menu li p
+{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 
 .profile-menu li:hover
 {
     background: #fe8e04;
+    color: #07011F;
 }
+
 
 .profile-area
 {
     width: 65%;
     height: 100%;
-    padding: 2rem;
+    padding: 1rem 2rem;
     background: lightgrey;
 }
 
@@ -130,7 +145,7 @@
 {
     width: 65%;
     height: 100%;
-    padding: 2rem;
+    padding: 1rem 2rem;
     background: lightgrey;
 }
 
@@ -194,12 +209,16 @@
 
 .profile-comp
 {
-    border: 2px solid #0479fe;
-   display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    display: block;
+    z-index: 10;
 }
 
 .profile-hidden
 {
-    /* display: none; */
+    display: none;
 }
 

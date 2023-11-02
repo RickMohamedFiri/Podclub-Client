@@ -17,7 +17,7 @@ function SignUp(){
                     <input className="signup-input" type='text' id='username' placeholder='Username' />
                     <input className="signup-input" type='email' id='email' placeholder='Email'  />
                     <input className="signup-input" type='password' id='password' placeholder='Password'   />
-                    <button className="signup-btn">Sign Up</button>
+                    <button className="signup-btn"><span>Sign Up</span></button>
                 </form>
                 <div className='redirect'>
                     <span >Already have an account ? <Link to="/Login" className='login'>Login</Link></span>

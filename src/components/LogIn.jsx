@@ -18,7 +18,7 @@ function LogIn(){
                 <form className="login-form">
                     <input className="login-input" type='text' placeholder='Username' />
                     <input className="login-input" type='password' placeholder='Password' />
-                    <button className="login-btn">Log In</button>
+                    <button className="login-btn"><span>Log In</span></button>
                 </form>
                 <div className='redirect'>
                     <span >Don't have an account ?  <Link to="/Signup" className="signup">Sign Up</Link></span>
