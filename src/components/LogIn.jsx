@@ -6,6 +6,7 @@ import '../css/LogIn.css';
 function LogIn(){
     return (
         <div className='main'>
+            
             <div className='logo'>
             <img src={logo} alt='podclub-logo'  />
             </div>

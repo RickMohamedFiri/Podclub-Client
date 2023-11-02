@@ -1,13 +1,13 @@
 import '../css/channels.css'
 
-const Channels = () => {
+const Channels = ({open, setOpen}) => {
     return ( 
         <div className='menu'>
             <div className="user">
                 <div className="icon">
                     <img src="icon.jpg" alt="" />
                 </div>
-                <div className="details">
+                <div onClick={()=>{setOpen(!open)}} className="details">
                     <p className="username">Rick Sanchez</p>
                     <p className="about">Get Schwifty.</p>
                 </div>
