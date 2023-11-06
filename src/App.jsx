@@ -9,6 +9,7 @@ import LandingPage from './components/LandingPage.jsx';
 import SignUp from './components/SignUp.jsx'
 // eslint-disable-next-line
 import LogIn from './components/LogIn.jsx';
+import Home from './components/Home.jsx';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/Homepage' element={<Homepage/>}/>
           <Route path='/Signup' element={<SignUp/>}/>
           <Route path='/Login' element={<LogIn/>}/>
+          <Route path='/Home' element={<Home/>}/>
         </Routes>
     
     </Router>

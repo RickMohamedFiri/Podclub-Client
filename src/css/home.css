@@ -1,0 +1,64 @@
+body{
+    background-color: #07011F;
+    font-family: 'K2D', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.Nav{
+    margin-top: 3%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Nav2{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    margin-right: 15%;
+}
+
+.Slogan{
+    margin-top: 4%;
+    width: 623px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#S1{
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#S2{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#S3{
+    font-size: 100px;
+    font-weight: 600;
+    color: #C86F1E;
+}
+
+.Content{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.Icons{
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Icons > img{
+    width: 38px;
+    height: 38px;
+}
