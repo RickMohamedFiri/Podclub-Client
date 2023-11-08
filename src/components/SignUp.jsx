@@ -1,5 +1,5 @@
 import {Link } from "react-router-dom"
-import logo from './Logo(1).png'
+import logo from '../podclub-images/Logo(1).png'
 import '../css/SignUp.css'
 
 

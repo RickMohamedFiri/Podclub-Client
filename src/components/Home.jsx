@@ -1,10 +1,10 @@
 import "../css/home.css";
-import Logo from "./Logo(2).png";
-import mic from "./mic.png";
-import HomeIcon from "../css/HomeIcon.png";
-import ChannelsIcon from "../css/ChannelsIcon.png";
-import SettingsIcon from "../css/SettingsIcon.png";
-import ProfileIcon from "../css/ProfileIcon.png";
+import Logo from "../podclub-images/Logo(2).png";
+import mic from "../podclub-images/mic.png";
+import HomeIcon from "../podclub-images/HomeIcon.png";
+import ChannelsIcon from "../podclub-images/ChannelsIcon.png";
+import SettingsIcon from "../podclub-images/SettingsIcon.png";
+import ProfileIcon from "../podclub-images/ProfileIcon.png";
 
 
 function Home(){

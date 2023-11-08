@@ -6,7 +6,7 @@
 .main{
     height: 100vh;
     width: 100%;
-    background-image: url(../components/background.png);
+    background-image: url(../podclub-images/background.png);
     background-size: cover;
     overflow: hidden;
     font-family: 'K2D', Lato;
