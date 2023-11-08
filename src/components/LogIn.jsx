@@ -1,3 +1,4 @@
+
 import {Link} from "react-router-dom";
 import logo from '../podclub-images/Logo(1).png'
 import '../css/LogIn.css';
@@ -10,6 +11,7 @@ function LogIn(){
             <div className='logo'>
             <img src={logo} alt='podclub-logo'  />
             </div>
+
             <div className='form-container'>
             <div className='title'>
                 <span>Welcome</span> 
@@ -22,10 +24,12 @@ function LogIn(){
                 </form>
                 <div className='redirect'>
                     <span >Don't have an account ?  <Link to="/Signup" className="signup">Sign Up</Link></span>
+
                 </div>
 
             </div>
         </div>
+        </>
     );
 }
 

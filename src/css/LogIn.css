@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 .main{
     height: 100vh;
     width: 100%;
@@ -11,7 +10,6 @@
     overflow: hidden;
     font-family: 'K2D', Lato;
 }
-
 .sub-title{
     
     font-size: 27px;
@@ -41,6 +39,7 @@
 }
 
 .logo{
+
     position: relative;
     margin-top: 30px;
     margin-left: 79px;
@@ -66,11 +65,6 @@
 {
     color: #fff;
 }
-
-
-
-
-
 .login-btn {
     background: #020220;
     color: #fff;
@@ -118,8 +112,6 @@
     opacity: 1;
   }
 
-  
-
 .title{
     display: flex;
     flex-direction: column;
@@ -138,8 +130,20 @@
 
 
 
+
 .signup{
     font-size: 15px;
     color: #020220;
     font-weight: 600;
+}
+
+img{
+    position: relative;
+    margin-top: 48px;
+}
+
+
+.Login-link{
+    color: blue;
+    font-size: 15px;
 }
