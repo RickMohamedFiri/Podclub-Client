@@ -139,3 +139,26 @@ height: 27px;
   transform: translateY(-140px);
 }
 
+.num1{
+  font-size: 70px;
+  font-weight: 100;
+}
+.num2{
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.num3{
+  font-size: 60px;
+  font-weight: 600;
+  color: #C86F1E;
+}
+.num4{
+  font-size: 60px;
+  font-weight: 400;
+}
+.num5{
+  font-size: 73px;
+  font-weight: 800;
+}
+

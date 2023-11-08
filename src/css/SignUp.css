@@ -4,7 +4,9 @@
 }
 
 .main{
-    background-image: url(../components/background.png);
+    height: 100vh;
+    width: 100%;
+    background-image: url(../podclub-images/background.png);
     background-size: cover;
     font-family: 'K2D', Lato;
 }
@@ -24,7 +26,8 @@
     justify-content: center;
 }
 
-.signupform {
+.signup-form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,13 +40,14 @@
 }
 
 
-.signupinput {
+
+.signup-input {
     margin-bottom: 30px;
     width: 308px;
     height: 58px;
     border-radius: 60px;
     display: flex;
-    border: 1px solid;
+    border: 2px solid;
     border-color: #07011F;
     background-color: rgba(0,0,0,0);
     font-size: 21px;
@@ -52,16 +56,58 @@
     color: #FFFFFF;
 }
 
-.signup-btn{
-    margin-bottom: 4px;
-    width: 308px;
-    height: 58px;
-    border-radius: 60px;
-    background-color: #07011F;
-    color: white;
-    border: none;
-    font-size: 18px;
+.signup-input::placeholder
+{
+    color: #fff;
 }
+
+.signup-btn {
+    background: #020220;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 208px;
+    height: 58px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    border-radius: 3rem;
+  }
+  
+.signup-btn span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  .signup-btn::before {
+    content: '';
+    position: absolute;
+    border-radius: 3rem;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .signup-btn:hover {
+    color: #07011F;
+    transition: .3s ease;
+  }
+  
+  .signup-btn:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
 
 .title{
     color: #FFFFFF;
@@ -70,18 +116,20 @@
     font-weight: 800;
 }
 
-.redirect{
+.redirect span{
     color: #FFFFFF;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
-.podclub-img{
+.logo-img{
+
     position: relative;
     margin-top: 48px;
 }
 
-.Signup-link{
-    color: blue;
+.login{
     font-size: 15px;
+    color: #02021b;
+    font-weight: 600;
 }

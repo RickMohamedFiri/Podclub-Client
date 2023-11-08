@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    background-image: url(../components/background.png);
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../podclub-images/background.png);
     background-size: cover;
+    overflow: hidden;
     font-family: 'K2D', Lato;
 }
-
 .sub-title{
     
     font-size: 27px;
@@ -31,25 +32,27 @@ body{
     justify-content: center;
 }
 
-form {
+.login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .logo{
+
+    position: relative;
     margin-top: 30px;
     margin-left: 79px;
 }
 
 
-input {
+.login-input {
     margin-bottom: 30px;
     width: 308px;
     height: 58px;
     border-radius: 60px;
     display: flex;
-    border: 1px solid;
+    border: 2px solid;
     border-color: #07011F;
     background-color: rgba(0,0,0,0);
     font-size: 21px;
@@ -58,16 +61,56 @@ input {
     color: #FFFFFF;
 }
 
-button{
-    margin-bottom: 4px;
-    width: 308px;
-    height: 58px;
-    border-radius: 60px;
-    background-color: #07011F;
-    color: white;
-    border: none;
-    font-size: 18px;
+.login-input::placeholder
+{
+    color: #fff;
 }
+.login-btn {
+    background: #020220;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 208px;
+    height: 58px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    border-radius: 3rem;
+  }
+  
+.login-btn span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  .login-btn::before {
+    content: '';
+    position: absolute;
+    border-radius: 3rem;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .login-btn:hover {
+    color: #07011F;
+    transition: .3s ease;
+  }
+  
+  .login-btn:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
 
 .title{
     display: flex;
@@ -83,6 +126,15 @@ button{
     color: #FFFFFF;
     font-size: 13px;
     font-weight: 400;
+}
+
+
+
+
+.signup{
+    font-size: 15px;
+    color: #020220;
+    font-weight: 600;
 }
 
 img{
