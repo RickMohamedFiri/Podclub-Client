@@ -9,20 +9,27 @@ import LandingPage from './components/LandingPage.jsx';
 import SignUp from './components/SignUp.jsx'
 // eslint-disable-next-line
 import LogIn from './components/LogIn.jsx';
+import useToken from './components/useToken';
 
 
 function App() {
 
+  const {token, removeToken, setToken} = useToken()
+
   return (
     <Router>
-     
+
+     { !token && token!=="" & token!==undefined?
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
-          <Route path='/Homepage' element={<Homepage/>}/>
+          <Route path='/Login' setToken={setToken} element={<LogIn/>}/>
           <Route path='/Signup' element={<SignUp/>}/>
-          <Route path='/Login' element={<LogIn/>}/>
         </Routes>
-    
+        :
+        <Routes>
+          <Route path='/Homepage' element={<Homepage/>}/>
+        </Routes>
+    }
     </Router>
   );
 }
