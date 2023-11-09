@@ -1,3 +1,4 @@
+import React from 'react';
 import '../css/homepage.css'
 import { AiFillCloseCircle, AiFillEdit,  } from 'react-icons/ai';
 import { FcSettings } from 'react-icons/fc'

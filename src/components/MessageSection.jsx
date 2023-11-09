@@ -1,3 +1,4 @@
+import React from 'react';
 import '../css/messagesSection.css';
 import Textbar from './Textbar.jsx';
 import Chats from './Chats';

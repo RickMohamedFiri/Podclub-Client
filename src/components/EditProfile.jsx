@@ -1,4 +1,5 @@
-import '../css/homepage.css'
+import React from 'react';
+import '../css/homepage.css';
 
 const EditProfile = () => {
     return ( 

@@ -1,3 +1,4 @@
+import React from 'react';
 import "../css/home.css";
 import Logo from "../podclub-images/Logo(2).png";
 import mic from "../podclub-images/mic.png";
