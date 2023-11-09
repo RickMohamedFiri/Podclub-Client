@@ -1,14 +1,21 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from './Logo(1).png'
 import '../css/LogIn.css';
 import axios from "axios";
+import { Context } from "../App";
 
-function LogIn({setToken}) {
+
+function LogIn() {
+
     const [loginForm, setLoginForm] = useState({
         email: "",
         password: ""
     });
+
+    const[token, removeToken, setToken] = useContext(Context);
+
+    const navigate = useNavigate();
 
     const handleChange = (event) => {
         const { value, name } = event.target;
@@ -32,8 +39,9 @@ function LogIn({setToken}) {
             if (response.status === 200) {
                 console.log(response);
                 setToken(response.data.access_token);
-                alert("Login Successful");
                 localStorage.setItem("email", loginForm.email);
+                alert("Login Successful");
+                navigate('/Homepage');
             }
         })
         .catch(function (error) {
@@ -77,9 +85,12 @@ function LogIn({setToken}) {
                         type='password'
                         placeholder='Password'
                     />
-                    <button onClick={handleLogin} className="login-btn">
-                        <span>Log In</span>
-                    </button>
+                    <div onClick={handleLogin} class="login-btn">
+                        <div class="cube">
+                            <span class="side top">Log In</span>
+                            <span class="side front">Log In</span>
+                        </div>
+                    </div>
                 </form>
                 <div className='redirect'>
                     <span>Don't have an account? <Link to="/Signup" className="signup">Sign Up</Link></span>

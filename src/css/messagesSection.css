@@ -46,4 +46,62 @@
     cursor: pointer;
 }
 
-
+.logout-btn {
+    margin-left: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #fe8e04;
+    background: #07011F;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+   }
+   
+   .logout-btn:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #fe8e04;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .logout-btn:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .logout-btn span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 700;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .logout-btn:hover span {
+    color: #07011F;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   

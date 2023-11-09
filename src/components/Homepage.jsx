@@ -1,6 +1,6 @@
 import { useState } from "react";
 import '../css/homepage.css'
-import Channels from "./Chanels.jsx";
+import SideBar from "./SideBar.jsx";
 import MessageSection from "./MessageSection.jsx";
 import Profile from './Profile.jsx';
 
@@ -10,13 +10,13 @@ const Homepage = () => {
 
     return ( 
     <>
-    <div className="homepage">
-        <Channels open={open} setOpen={setOpen}/>
-        <MessageSection/>
-        <div className={`${open ? 'profile-comp': 'profile-hidden'}`}>
-            <Profile open={open} setOpen={setOpen}/>
+        <div className="homepage">
+            <SideBar open={open} setOpen={setOpen}/>
+            <MessageSection/>
+            <div className={`${open ? 'profile-comp': 'profile-hidden'}`}>
+                <Profile open={open} setOpen={setOpen}/>
+            </div>
         </div>
-    </div>
 
     </> );
 }

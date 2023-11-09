@@ -1,6 +1,9 @@
 import '../css/channels.css'
 
-const Channels = ({open, setOpen}) => {
+const SideBar = ({open, setOpen}) => {
+
+    const username = localStorage.getItem("username")
+
     return ( 
         <div className='menu'>
             <div className="user">
@@ -8,7 +11,7 @@ const Channels = ({open, setOpen}) => {
                     <img src="icon.jpg" alt="" />
                 </div>
                 <div onClick={()=>{setOpen(!open)}} className="details">
-                    <p className="username">Rick Sanchez</p>
+                    <p className="username">{username}</p>
                     <p className="about">Get Schwifty.</p>
                 </div>
             </div>
@@ -39,12 +42,13 @@ const Channels = ({open, setOpen}) => {
                     </div>
                     <p>CHANNEL NAME</p>
                 </li>
-            
-                
                 
             </ul>
+
+           
+
         </div>  
      );
 }
  
-export default Channels;
+export default SideBar;

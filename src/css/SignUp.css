@@ -43,7 +43,7 @@
 .signup-input {
     margin-bottom: 30px;
     width: 308px;
-    height: 58px;
+    height: 50px;
     border-radius: 60px;
     display: flex;
     border: 2px solid;
@@ -61,52 +61,54 @@
 }
 
 .signup-btn {
-    background: #020220;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    width: 208px;
-    height: 58px;
-    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .signup-btn  .cube {
     cursor: pointer;
-    transform: skew(-21deg);
-    border-radius: 3rem;
-  }
-  
-.signup-btn span {
-    display: inline-block;
-    transform: skew(21deg);
-  }
-  
-  .signup-btn::before {
-    content: '';
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+    transform-style: preserve-3d;
+    transform-origin: 100% 50%;
+    width: 10em;
+    height: 4em;
+    transform: rotateX(-90deg);
+   }
+   
+   .signup-btn  .cube:hover {
+    transform: rotateX(0deg);
+   }
+   
+   .signup-btn  .side {
+    box-sizing: border-box;
     position: absolute;
-    border-radius: 3rem;
-    top: 0;
-    bottom: 0;
-    right: 100%;
-    left: 0;
-    background: #fff;
-    opacity: 0;
-    z-index: -1;
-    transition: all 0.5s;
-  }
-  
-  .signup-btn:hover {
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-weight: bold;
+   }
+   
+   .signup-btn  .top {
+    border-radius: .1rem;
+    background: #07011F;
+    color: orange;
+    transform: rotateX(90deg) translate3d(0, 0, 2em);
+    box-shadow: inset 0 0 0 5px #fff;
+   }
+   
+   .signup-btn  .front {
+    border-radius: .1rem;
     color: #07011F;
-    transition: .3s ease;
-  }
-  
-  .signup-btn:hover::before {
-    left: 0;
-    right: 0;
-    opacity: 1;
-  }
-
+    background: transparent;
+    box-shadow: inset 0 0 0 5px #fff;
+    transform: translate3d(0, 0, 2em);
+   }
   
 
 
