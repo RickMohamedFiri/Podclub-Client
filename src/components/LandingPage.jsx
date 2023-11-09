@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import Logo from "../podclub-images/Logo(1).png";
 import '../css/landingpage.css'

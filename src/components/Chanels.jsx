@@ -1,3 +1,4 @@
+import React from 'react';
 import '../css/channels.css'
 
 const Channels = ({open, setOpen}) => {
