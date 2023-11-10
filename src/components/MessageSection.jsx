@@ -16,7 +16,7 @@ const MessageSection = () => {
         navigate("/");
 
         // axios({
-        //     method: "GET",
+        //     method: "POST",
         //     url: "https://podclub-api-z229.onrender.com/logout",
         // })
         // .then((response) => {
