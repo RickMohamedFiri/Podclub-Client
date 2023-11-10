@@ -12,23 +12,29 @@ const MessageSection = () => {
 
 
     const LogMeOut = () => {
-        axios({
-            method: "POST",
-            url: "https://podclub-api-z229.onrender.com/logout",
-        })
-        .then((response) => {
-            removeToken(); 
-            localStorage.removeItem('email');
-            alert("Logout Successful");
-            navigate("/");
-        })
-        .catch(err => {
-            if (err.response) {
-                console.log(err.response);
-                console.log(err.response.status);
-                console.log(err.response.headers);
-            }
-        });
+
+        navigate("/");
+
+        // axios({
+        //     method: "GET",
+        //     url: "https://podclub-api-z229.onrender.com/logout",
+        // })
+        // .then((response) => {
+        //     console.log(response);
+        //     removeToken();
+        //     localStorage.removeItem('email');
+        //     localStorage.removeItem('username');
+        //     localStorage.removeItem('user_id');
+        //     alert("Logout Successful");
+        //     navigate("/");
+        // })
+        // .catch(err => {
+        //     if (err.response) {
+        //         console.log(err.response);
+        //         console.log(err.response.status);
+        //         console.log(err.response.headers);
+        //     }
+        // });
     }
 
     return (

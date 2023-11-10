@@ -37,35 +37,79 @@
     font-size: 1rem;
 }
 
-.search{
-    padding: 0 1rem;
-    width: 100%;
-    height: 2rem;
-    border: none;
-    outline: none;
-    background: transparent;
-    border-bottom: 2px solid grey;
-}
 
-.search::placeholder
-{
-    color: lightgray;
-    font-size: 1rem;
-}
-
+.button {
+    margin: 1.4rem auto;
+    position: relative;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid orangered;
+    background-color: #fe8e04;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(20px);
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(189px);
+    height: 100%;
+    width: 59px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 30px;
+    stroke: #333;
+  }
+  
+  .button:hover {
+    background: #fe8e04;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 248px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: orangered;
+  }
+  
+  .button:active {
+    border: 1px solid orangered;
+  }
 .channel
 {
     display: flex;
     gap: .7rem;
     align-items: center;
     color: #fff;
-    padding: .4rem 1rem;
+    padding: 1rem;
     cursor: pointer;
 }
 
 .channel:hover
 {
     background: #fe8e04;
+    color: #07011F;
 }
 
 .icon
@@ -86,3 +130,47 @@
     font-size: .9rem;
     font-weight: bold;
 }
+
+
+.add-channel
+{
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(4px );
+    position: absolute;
+    z-index: 12;
+    display: grid;
+    place-items: center;
+}
+
+.reveal-form
+{
+    display: block;
+}
+
+.hide-form
+{
+    display: none;
+}
+
+.channel-form
+{
+    border: 3px solid orangered;
+    background: #07011F;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.channel-form input
+{
+    outline: none;
+    padding: .3rem 1rem;
+    border-bottom: 2px solid orangered;
+    background: #07011F;
+}
+

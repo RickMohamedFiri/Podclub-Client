@@ -14,7 +14,7 @@ const Message = () => {
                 <span>just now</span>
             </div>
             <div className={styles.messageContent}>
-                <p>Hello</p>
+                <p>The new album is out guys!</p>
                 <img src="icon2.jpg" alt="" />
             </div>
          </div>

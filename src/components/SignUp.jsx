@@ -34,7 +34,7 @@ function SignUp() {
             method: "POST",
             url: "https://podclub-api-z229.onrender.com/signup",
             data: {
-                username: signupForm.username,
+                user_name: signupForm.username,
                 email: signupForm.email,
                 password: signupForm.password,
             },
@@ -43,7 +43,10 @@ function SignUp() {
             if (response.status === 200) {
                 console.log(response);
                 setToken(response.data.access_token);
+                localStorage.setItem("user_id", response.data.user_id);
+                localStorage.setItem("email", signupForm.email);
                 localStorage.setItem("username", signupForm.username);
+                localStorage.setItem("user_id", response.data.user_id);
                 alert("Sign Up Successful");
                 navigate('/Homepage');
             }

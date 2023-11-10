@@ -1,6 +1,9 @@
 import '../css/homepage.css'
 
 const ProfileDetails = () => {
+
+    const username = localStorage.getItem("username");
+    const email = localStorage.getItem("email");
     return ( 
         <>
           <div className="profile-area">
@@ -8,12 +11,12 @@ const ProfileDetails = () => {
                             <ul className="profile-details">
                                 <li>
                                     <h2>Username</h2>
-                                    <p>Rick Sanchez</p>
+                                    <p>{username}</p>
                                 </li>
 
                                 <li>
                                     <h2>Email</h2>
-                                    <p>rick@sanchez.com</p>
+                                    <p>{email}</p>
                                 </li>
 
                                 <li>

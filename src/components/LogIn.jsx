@@ -40,6 +40,8 @@ function LogIn() {
                 console.log(response);
                 setToken(response.data.access_token);
                 localStorage.setItem("email", loginForm.email);
+                localStorage.setItem("username", response.data.user_name);
+                localStorage.setItem("user_id", response.data.user_id);
                 alert("Login Successful");
                 navigate('/Homepage');
             }

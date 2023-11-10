@@ -7,11 +7,6 @@ const Chats = () => {
         <>
             <div className={styles.messages}>
                 <Message/>
-                <Message/>
-                <Message/>
-                <Message/>
-                <Message/>
-                <Message/>
             </div>
         </>
      );

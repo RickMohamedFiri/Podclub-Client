@@ -1,6 +1,7 @@
 .homepage
 {
     display: flex;
+  overflow: hidden;
 }
 
 .homepage::-webkit-scrollbar
@@ -222,3 +223,16 @@
     display: none;
 }
 
+
+
+
+
+.reveal-form
+{
+    display: block;
+}
+
+.hide-form
+{
+    display: none;
+}

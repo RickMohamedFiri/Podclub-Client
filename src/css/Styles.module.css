@@ -1,8 +1,11 @@
 .messages
 {
   background: grey;
-  height: calc(100%-20rem);
+  height: 85%;
+  width: 77%;
   padding: .95rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .messages::-webkit-scrollbar
@@ -53,12 +56,13 @@
   padding-right: .6rem;
   display: flex;
   flex-direction: column;
-  color: #07011F;
+  color: #fff;
   font-weight: 3000;
 }
 
 .messageInfo img
 {
+  border: 2px solid;
   border-radius: 50%;
   object-fit: cover;
   width: 3rem;
@@ -95,12 +99,13 @@
    color: #fff;
   border-top: 1.8px solid grey;
   height: 4.7rem;
-  width: 100%;
-  /* position: fixed; */
+  width: 77%;
   position: sticky;
   bottom: 0;
+  position: absolute;
+  overflow: hidden;
   align-items: center;
-  padding: .5rem;
+  padding: .2rem;
   background: lightgrey;
   display: flex;
   justify-content: space-between;
